@@ -1,0 +1,61 @@
+<core:FragmentDefinition
+        xmlns="sap.m"
+        xmlns:core="sap.ui.core"
+        xmlns:build="sap.build"
+        xmlns:ovp="sap.ovp.ui"
+        xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1">
+
+
+    <VBox id="ovpCardHeader" class="{= ${ovpCardProperties>/category} || ${ovpCardProperties>/title} || ${ovpCardProperties>/subTitle} ? 'sapOvpCardHeader' : 'sapOvpCardHeader sapOvpCardHideHeader' }"
+          build:metadata="#pattern:GenericCard;isAbstract;prop::EntitySet:{ovpCardProperties>/entitySet}">
+        <customData>
+            <ovp:CustomData key="tabindex" value="0" writeToDom="true" />
+            <ovp:CustomData key="role" value="button" writeToDom="true" />
+        </customData>
+        <template:if test="{ovpCardProperties>/category}">
+            <FlexBox alignItems="Start" justifyContent="SpaceBetween">
+                <Text
+                    text="{ovpCardProperties>/category}"
+                    class="sapOvpCardCategory"
+                    tooltip="{ovpCardProperties>/category}"
+                    build:metadata="#pattern:GenericCard;prop:text:Category">
+                    <customData>
+                        <ovp:CustomData key="aria-label" value="{ovpCardProperties>/category}" writeToDom="true" />
+                        <ovp:CustomData key="role" value="heading" writeToDom="true" />
+                        <ovp:CustomData key="tabindex" value="0" writeToDom="true" />
+                    </customData>
+                </Text>
+            </FlexBox>
+        </template:if>
+        <template:if test="{ovpCardProperties>/title}">
+            <Text
+                text="{ovpCardProperties>/title}"
+                class="sapOvpCardTitle"
+                tooltip="{ovpCardProperties>/title}"
+                build:metadata="#pattern:GenericCard;prop:text:Title">
+                <customData>
+                    <ovp:CustomData key="aria-label" value="{ovpCardProperties>/title}" writeToDom="true" />
+                    <ovp:CustomData key="role" value="heading" writeToDom="true" />
+                </customData>
+            </Text>
+        </template:if>
+        <template:if test="{ovpCardProperties>/headerExtensionFragment}">
+            <core:Fragment fragmentName="{ovpCardProperties>/headerExtensionFragment}" type="XML" />
+        </template:if>
+        <template:if test="{ovpCardProperties>/subTitle}">
+            <FlexBox class="sapOvpCardSubtitleContainer">
+                <Text
+                    text="{ovpCardProperties>/subTitle}"
+                    class="sapOvpCardSubtitle"
+                    tooltip="{ovpCardProperties>/subTitle}"
+                    build:metadata="#pattern:GenericCard;prop:text:subTitle">
+                    <customData>
+                        <ovp:CustomData key="aria-label" value="{ovpCardProperties>/subTitle}" writeToDom="true" />
+                        <ovp:CustomData key="role" value="heading" writeToDom="true" />
+                    </customData>                    
+                </Text>
+            </FlexBox>
+        </template:if>
+    </VBox>
+
+</core:FragmentDefinition>

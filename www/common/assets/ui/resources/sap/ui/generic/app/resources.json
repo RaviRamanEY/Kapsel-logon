@@ -1,0 +1,320 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": ".library"
+    },
+    {
+      "name": "AppComponent-dbg.js",
+      "module": "sap/ui/generic/app/AppComponent.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/UIComponent.js",
+        "sap/ui/generic/app/ApplicationController.js",
+        "sap/ui/generic/app/navigation/NavigationController.js",
+        "sap/m/NavContainer.js"
+      ]
+    },
+    {
+      "name": "AppComponent.js",
+      "module": "sap/ui/generic/app/AppComponent.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/UIComponent.js",
+        "sap/ui/generic/app/ApplicationController.js",
+        "sap/ui/generic/app/navigation/NavigationController.js",
+        "sap/m/NavContainer.js"
+      ]
+    },
+    {
+      "name": "ApplicationController-dbg.js",
+      "module": "sap/ui/generic/app/ApplicationController.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/generic/app/transaction/BaseController.js",
+        "sap/ui/generic/app/transaction/TransactionController.js"
+      ]
+    },
+    {
+      "name": "ApplicationController.js",
+      "module": "sap/ui/generic/app/ApplicationController.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/generic/app/transaction/BaseController.js",
+        "sap/ui/generic/app/transaction/TransactionController.js"
+      ]
+    },
+    {
+      "name": "library-all-dbg.js",
+      "isDebug": true,
+      "merged": true
+    },
+    {
+      "name": "library-all.js",
+      "merged": true
+    },
+    {
+      "name": "library-dbg.js",
+      "module": "sap/ui/generic/app/library.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/library.js"
+      ]
+    },
+    {
+      "name": "library-preload.json",
+      "merged": true
+    },
+    {
+      "name": "library.dependencies.json"
+    },
+    {
+      "name": "library.dependencies.xml"
+    },
+    {
+      "name": "library.js",
+      "module": "sap/ui/generic/app/library.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/library.js"
+      ]
+    },
+    {
+      "name": "manifest.json",
+      "module": "sap/ui/generic/app/manifest.json"
+    },
+    {
+      "name": "messagebundle.properties",
+      "module": "sap/ui/generic/app/messagebundle.properties"
+    },
+    {
+      "name": "navigation/NavigationController-dbg.js",
+      "module": "sap/ui/generic/app/navigation/NavigationController.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/Object.js",
+        "sap/ui/core/ComponentContainer.js",
+        "sap/ui/core/routing/HashChanger.js",
+        "sap/ui/core/routing/History.js",
+        "sap/ui/model/Filter.js",
+        "sap/ui/model/FilterOperator.js",
+        "sap/m/MessageBox.js",
+        "sap/m/MessagePage.js",
+        "sap/m/Link.js"
+      ]
+    },
+    {
+      "name": "navigation/NavigationController.js",
+      "module": "sap/ui/generic/app/navigation/NavigationController.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/Object.js",
+        "sap/ui/core/ComponentContainer.js",
+        "sap/ui/core/routing/HashChanger.js",
+        "sap/ui/core/routing/History.js",
+        "sap/ui/model/Filter.js",
+        "sap/ui/model/FilterOperator.js",
+        "sap/m/MessageBox.js",
+        "sap/m/MessagePage.js",
+        "sap/m/Link.js"
+      ]
+    },
+    {
+      "name": "navigation/service/NavError-dbg.js",
+      "module": "sap/ui/generic/app/navigation/service/NavError.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/Object.js"
+      ]
+    },
+    {
+      "name": "navigation/service/NavError.js",
+      "module": "sap/ui/generic/app/navigation/service/NavError.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/Object.js"
+      ]
+    },
+    {
+      "name": "navigation/service/NavigationHandler-dbg.js",
+      "module": "sap/ui/generic/app/navigation/service/NavigationHandler.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/generic/app/navigation/service/NavError.js",
+        "sap/ui/generic/app/navigation/service/SelectionVariant.js",
+        "sap/ui/generic/app/library.js",
+        "sap/ui/base/Object.js",
+        "sap/ui/model/resource/ResourceModel.js",
+        "sap/ui/core/UIComponent.js",
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "navigation/service/NavigationHandler.js",
+      "module": "sap/ui/generic/app/navigation/service/NavigationHandler.js",
+      "required": [
+        "sap/ui/generic/app/navigation/service/NavError.js",
+        "sap/ui/generic/app/navigation/service/SelectionVariant.js",
+        "sap/ui/generic/app/library.js",
+        "sap/ui/base/Object.js",
+        "sap/ui/model/resource/ResourceModel.js",
+        "sap/ui/core/UIComponent.js",
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "navigation/service/SelectionVariant-dbg.js",
+      "module": "sap/ui/generic/app/navigation/service/SelectionVariant.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/generic/app/navigation/service/NavError.js",
+        "sap/ui/base/Object.js",
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "navigation/service/SelectionVariant.js",
+      "module": "sap/ui/generic/app/navigation/service/SelectionVariant.js",
+      "required": [
+        "sap/ui/generic/app/navigation/service/NavError.js",
+        "sap/ui/base/Object.js",
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "resources.json"
+    },
+    {
+      "name": "transaction/BaseController-dbg.js",
+      "module": "sap/ui/generic/app/transaction/BaseController.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/EventProvider.js",
+        "sap/ui/generic/app/util/ModelUtil.js",
+        "sap/ui/generic/app/util/DraftUtil.js",
+        "sap/ui/generic/app/util/Queue.js"
+      ]
+    },
+    {
+      "name": "transaction/BaseController.js",
+      "module": "sap/ui/generic/app/transaction/BaseController.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/EventProvider.js",
+        "sap/ui/generic/app/util/ModelUtil.js",
+        "sap/ui/generic/app/util/DraftUtil.js",
+        "sap/ui/generic/app/util/Queue.js"
+      ]
+    },
+    {
+      "name": "transaction/DraftContext-dbg.js",
+      "module": "sap/ui/generic/app/transaction/DraftContext.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/Object.js",
+        "sap/ui/generic/app/util/ModelUtil.js"
+      ]
+    },
+    {
+      "name": "transaction/DraftContext.js",
+      "module": "sap/ui/generic/app/transaction/DraftContext.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/Object.js",
+        "sap/ui/generic/app/util/ModelUtil.js"
+      ]
+    },
+    {
+      "name": "transaction/DraftController-dbg.js",
+      "module": "sap/ui/generic/app/transaction/DraftController.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/generic/app/transaction/BaseController.js",
+        "sap/ui/generic/app/transaction/DraftContext.js"
+      ]
+    },
+    {
+      "name": "transaction/DraftController.js",
+      "module": "sap/ui/generic/app/transaction/DraftController.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/generic/app/transaction/BaseController.js",
+        "sap/ui/generic/app/transaction/DraftContext.js"
+      ]
+    },
+    {
+      "name": "transaction/TransactionController-dbg.js",
+      "module": "sap/ui/generic/app/transaction/TransactionController.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/generic/app/transaction/BaseController.js",
+        "sap/ui/generic/app/transaction/DraftController.js",
+        "sap/ui/generic/app/util/ModelUtil.js"
+      ]
+    },
+    {
+      "name": "transaction/TransactionController.js",
+      "module": "sap/ui/generic/app/transaction/TransactionController.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/generic/app/transaction/BaseController.js",
+        "sap/ui/generic/app/transaction/DraftController.js",
+        "sap/ui/generic/app/util/ModelUtil.js"
+      ]
+    },
+    {
+      "name": "util/DraftUtil-dbg.js",
+      "module": "sap/ui/generic/app/util/DraftUtil.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "util/DraftUtil.js",
+      "module": "sap/ui/generic/app/util/DraftUtil.js",
+      "required": [
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "util/ModelUtil-dbg.js",
+      "module": "sap/ui/generic/app/util/ModelUtil.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "util/ModelUtil.js",
+      "module": "sap/ui/generic/app/util/ModelUtil.js",
+      "required": [
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "util/Queue-dbg.js",
+      "module": "sap/ui/generic/app/util/Queue.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js"
+      ]
+    },
+    {
+      "name": "util/Queue.js",
+      "module": "sap/ui/generic/app/util/Queue.js",
+      "required": [
+        "jquery.sap.global.js"
+      ]
+    }
+  ]
+}

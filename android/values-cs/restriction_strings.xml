@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
+    <string name="restriction_title_appID">"ID aplikace"</string>
+    <string name="restriction_description_appID">"ID aplikace použité k identifikaci aplikace pro datový trezor. Pokud používáte SMP, mělo by být konzistentní s ID cílové aplikace. Tato hodnota se liší od názvu paketu, který se používá především k identifikaci vaší aplikace v obchodech s aplikacemi."</string>
+
+    <string name="restriction_title_fioriURL">"URL serveru Fiori"</string>
+    <string name="restriction_description_fioriURL">"Celé URL cílové aplikace. Pokud vaše aplikace nepoužívá SMP, zavede vás přímo k tomuto URL, až bude přihlášení dokončeno. Pokud vaše aplikace používá SMP, toto URL je analyzováno a používáno následujícím způsobem: 1. Schéma URL (které musí být HTTP nebo HTTPS) určuje počáteční hodnotu znaku \'https\' v registračním dialogu. Podobně hostitel a port v URL určují příslušné počáteční hodnoty v registračním dialogu se standardním portem 443, pokud není specifikován. 2. Sufix URL (vše po hostiteli a portu) je připojen k URL, který uživatel zaregistruje. Ačkoli se pravděpodobně jedná o to samé, jako je schéma, hostitel a port z bodu 1., uživatel může tyto hodnoty změnit. Sufix však změnit nelze. Pokud používáte SMP, zadejte schéma, hostitele a port vašeho serveru SMP následované sufixem koncového bodu Fiori. Např.: \'https://my.smp.server:8081/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html\'"</string>
+
+     <string name="restriction_title_appName">"Název aplikace"</string>
+     <string name="restriction_description_appName">"Volitelná vlastnost použitá k přizpůsobení názvu aplikace Fiori, který se zobrazuje na přihlašovací obrazovce. Standardně je názvem aplikace SAP Fiori Client. Pokud je toto pole prázdné, použije se standardní hodnota."</string>
+
+     <string name="restriction_title_fioriURLIsSMP">"URL serveru Fiori je server SMP"</string>
+     <string name="restriction_description_fioriURLIsSMP">"Pokud používáte SMP, nastavte toto na pravdu, aby se provedla registrace."</string>
+
+     <string name="restriction_title_prefetch">"Předběžně vyvolat webové prostředky"</string>
+     <string name="restriction_description_prefetch">"Načítá webové prostředky aplikace SAP Fiori z frontendového serveru SAP Fiori a stahuje je do zařízení uživatele. Po počátečním stažení načítá a stahuje aktualizace aplikací z frontendového serveru SAP Fiori."</string>
+
+    <string name="restriction_title_certificate">"Poskytovatel klientského certifikátu"</string>
+    <string name="restriction_description_certificate">"Poskytovatel klientského certifikátu"</string>
+
+    <string name="restriction_title_autoSelectSingleCert">"Automaticky vybrat poskytovatele klientského certifikátu"</string>
+    <string name="restriction_description_autoSelectSingleCert">"Pokud je k dispozici jeden klientský certifikát, automaticky vybrat certifikát pro vzájemnou autentizaci."</string>
+
+    <string name="restriction_title_passcodePolicyExpirationDays">"Zásady kódu - dny vypršení platnosti"</string>
+    <string name="restriction_description_passcodePolicyExpirationDays">"Zásady kódu datového trezoru. Poznámka: Pokud používáte SMP, zásady kódu jsou stanoveny serverem."</string>
+
+    <string name="restriction_title_passcodePolicyHasDigits">"Zásady kódu mají číslice"</string>
+    <string name="restriction_description_passcodePolicyHasDigits">"Zásady kódu datového trezoru. Poznámka: Pokud používáte SMP, zásady kódu jsou stanoveny serverem."</string>
+
+    <string name="restriction_title_passcodePolicyHasLowerCaseLetters">"Zásady kódu mají malá písmena"</string>
+    <string name="restriction_description_passcodePolicyHasLowerCaseLetters">"Zásady kódu datového trezoru. Poznámka: Pokud používáte SMP, zásady kódu jsou stanoveny serverem."</string>
+
+    <string name="restriction_title_passcodePolicyHasSpecialLetters">"Zásady kódu mají speciální znaky"</string>
+    <string name="restriction_description_passcodePolicyHasSpecialLetters">"Zásady kódu datového trezoru. Poznámka: Pokud používáte SMP, zásady kódu jsou stanoveny serverem."</string>
+
+    <string name="restriction_title_passcodePolicyHasUpperCaseLetters">"Zásady kódu mají velká písmena"</string>
+    <string name="restriction_description_passcodePolicyHasUpperCaseLetters">"Zásady kódu datového trezoru. Poznámka: Pokud používáte SMP, zásady kódu jsou stanoveny serverem."</string>
+
+    <string name="restriction_title_passcodePolicyDefaultAllowed">"Standardní zásady kódu povoleny"</string>
+    <string name="restriction_description_passcodePolicyDefaultAllowed">"Zásady kódu datového trezoru. Poznámka: Pokud používáte SMP, zásady kódu jsou stanoveny serverem."</string>
+
+    <string name="restriction_title_passcodePolicyLockTimeout">"Zásady kódu - časový limit blokování"</string>
+    <string name="restriction_description_passcodePolicyLockTimeout">"Zásady kódu datového trezoru. Poznámka: Pokud používáte SMP, zásady kódu jsou stanoveny serverem."</string>
+
+    <string name="restriction_title_passcodePolicyMinLength">"Zásady kódu - minimální délka"</string>
+    <string name="restriction_description_passcodePolicyMinLength">"Zásady kódu datového trezoru. Poznámka: Pokud používáte SMP, zásady kódu jsou stanoveny serverem."</string>
+
+    <string name="restriction_title_passcodePolicyMinUniqueChars">"Zásady kódu - minimum jedinečných znaků"</string>
+    <string name="restriction_description_passcodePolicyMinUniqueChars">"Zásady kódu datového trezoru. Poznámka: Pokud používáte SMP, zásady kódu jsou stanoveny serverem."</string>
+
+    <string name="restriction_title_passcodePolicyRetryLimit">"Zásady kódu - limit opakování"</string>
+    <string name="restriction_description_passcodePolicyRetryLimit">"Zásady kódu datového trezoru. Poznámka: Pokud používáte SMP, zásady kódu jsou stanoveny serverem."</string>
+</resources>

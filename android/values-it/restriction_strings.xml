@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
+    <string name="restriction_title_appID">"ID applicazione"</string>
+    <string name="restriction_description_appID">"ID dell\'app utilizzato per identificare l\'applicazione nella cassaforte dati. Se utilizzi SMP, questo ID deve corrispondere all\'ID dell\'applicazione di destinazione. Nota: questo valore è diverso dal nome del pacchetto, che viene principalmente utilizzato per identificare la tua applicazione negli app store."</string>
+
+    <string name="restriction_title_fioriURL">"URL del server di Fiori"</string>
+    <string name="restriction_description_fioriURL">"URL completo dell\'applicazione di destinazione. Se la tua applicazione non utilizza SMP, l\'applicazione navigherà direttamente a questo URL una volta completato il login. Se la tua app utilizza SMP, l\'URL viene analizzato sintatticamente e utilizzato come segue: 1. Lo schema dell\'URL, che deve essere HTTP o HTTPS, determina il valore iniziale dell\'indicatore \'https\' nel dialogo di registrazione. In modo analogo, l\'host e la porta nell\'URL determinano i valori iniziali corrispondenti nel dialogo di registrazione. Se il valore della porta non è specificato, viene impostato il valore standard 443. 2. Il suffisso URL, ovvero tutti gli elementi che seguono l\'host e la porta, viene accodato all\'URL cui è registrato l\'utente. Anche se lo schema, l\'host e la porta corrispondono probabilmente a quell del punto 1., l\'utente può modificare questi valori. Il suffisso non può tuttavia essere modificato. Se utilizzi SMP, specifica lo schema, l\'host e la porta del tuo server SMP, seguiti dal suffisso del punto finale di Fiori. Ad esempio: \'https://my.smp.server:8081/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html\'"</string>
+
+     <string name="restriction_title_appName">"Nome applicazione"</string>
+     <string name="restriction_description_appName">"Proprietà opzionale utilizzata per personalizzare il nome dell\'applicazione Fiori visualizzato nella videata di logon. Per default, il nome dell\'app è SAP Fiori Client. Se questo campo è vuoto, si utilizza il nome standard."</string>
+
+     <string name="restriction_title_fioriURLIsSMP">"L\'URL del server di Fiori e un server SMP"</string>
+     <string name="restriction_description_fioriURLIsSMP">"Se utilizzi SMP, imposta il parametro su \"true\" per eseguire la registrazione"</string>
+
+     <string name="restriction_title_prefetch">"Pre-fetch di risorse web"</string>
+     <string name="restriction_description_prefetch">"Preleva risorse web dell\'app SAP Fiori dal server front-end di SAP Fiori e le scarica in un dispositivo dell\'utente. Dopo il download iniziale, preleva e scarica tutti gli aggiornamenti dell\'app dal server front-end di SAP Fiori."</string>
+
+    <string name="restriction_title_certificate">"Fornitore del certificato client"</string>
+    <string name="restriction_description_certificate">"Fornitore del certificato client"</string>
+
+    <string name="restriction_title_autoSelectSingleCert">"Seleziona automaticamente il fornitore del certificato client"</string>
+    <string name="restriction_description_autoSelectSingleCert">"Se è disponibile un solo certificato client, seleziona automaticamente quel certificato per autenticazione reciproca"</string>
+
+    <string name="restriction_title_passcodePolicyExpirationDays">"Norme del codice di accesso: giorni prima della scadenza"</string>
+    <string name="restriction_description_passcodePolicyExpirationDays">"Norme del codice di accesso d. cassaforte dati. Nota: se utilizzi SMP, le norme del codice acc. sono det. dal server"</string>
+
+    <string name="restriction_title_passcodePolicyHasDigits">"Le norme del codice di accesso contengono cifre"</string>
+    <string name="restriction_description_passcodePolicyHasDigits">"Norme del codice di accesso d. cassaforte dati. Nota: se utilizzi SMP, le norme del codice acc. sono det. dal server"</string>
+
+    <string name="restriction_title_passcodePolicyHasLowerCaseLetters">"Le norme del codice di accesso contengono minuscole"</string>
+    <string name="restriction_description_passcodePolicyHasLowerCaseLetters">"Norme del codice di accesso d. cassaforte dati. Nota: se utilizzi SMP, le norme del codice acc. sono det. dal server"</string>
+
+    <string name="restriction_title_passcodePolicyHasSpecialLetters">"Le norme del codice di accesso contengono caratteri speciali"</string>
+    <string name="restriction_description_passcodePolicyHasSpecialLetters">"Norme del codice di accesso d. cassaforte dati. Nota: se utilizzi SMP, le norme del codice acc. sono det. dal server"</string>
+
+    <string name="restriction_title_passcodePolicyHasUpperCaseLetters">"Le norme del codice di accesso contengono maiuscole"</string>
+    <string name="restriction_description_passcodePolicyHasUpperCaseLetters">"Norme del codice di accesso d. cassaforte dati. Nota: se utilizzi SMP, le norme del codice acc. sono det. dal server"</string>
+
+    <string name="restriction_title_passcodePolicyDefaultAllowed">"Norme del codice di accesso: ammessi valori standard"</string>
+    <string name="restriction_description_passcodePolicyDefaultAllowed">"Norme del codice di accesso d. cassaforte dati. Nota: se utilizzi SMP, le norme del codice acc. sono det. dal server"</string>
+
+    <string name="restriction_title_passcodePolicyLockTimeout">"Norme del codice di accesso: timeout del blocco"</string>
+    <string name="restriction_description_passcodePolicyLockTimeout">"Norme del codice di accesso d. cassaforte dati. Nota: se utilizzi SMP, le norme del codice acc. sono det. dal server"</string>
+
+    <string name="restriction_title_passcodePolicyMinLength">"Norme del codice di accesso: lunghezza minima"</string>
+    <string name="restriction_description_passcodePolicyMinLength">"Norme del codice di accesso d. cassaforte dati. Nota: se utilizzi SMP, le norme del codice acc. sono det. dal server"</string>
+
+    <string name="restriction_title_passcodePolicyMinUniqueChars">"Norme del codice di accesso: numero minimo di caratteri univoci"</string>
+    <string name="restriction_description_passcodePolicyMinUniqueChars">"Norme del codice di accesso d. cassaforte dati. Nota: se utilizzi SMP, le norme del codice acc. sono det. dal server"</string>
+
+    <string name="restriction_title_passcodePolicyRetryLimit">"Norme del codice di accesso: numero limite di nuovi tentativi"</string>
+    <string name="restriction_description_passcodePolicyRetryLimit">"Norme del codice di accesso d. cassaforte dati. Nota: se utilizzi SMP, le norme del codice acc. sono det. dal server"</string>
+</resources>

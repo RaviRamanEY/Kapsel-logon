@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
+    <string name="restriction_title_appID">"Applikasjons-ID"</string>
+    <string name="restriction_description_appID">"App-ID-en som er brukt til å identifisere applikasjonen for datahvelvet. Hvis du bruker SMP, må denne være konsistent med app-ID-en for målapplikasjonen. Merk at denne verdien er forskjellig fra pakkenavnet som hovedsakelig brukes til å identifisere applikasjonen i apparkiv."</string>
+
+    <string name="restriction_title_fioriURL">"SAP Fiori Server-URL"</string>
+    <string name="restriction_description_fioriURL">"Fullstendig URL til målapplikasjon. Hvis applikasjonen ikke bruker SMP, navigerer den direkte til denne URL-en så snart påloggingen er fullført. Hvis appen bruker SMP, vil denne URL-en bli analysert og brukt på følgende måte: 1. URL-skjemaet (som må være HTTP eller HTTPS) fastsetter initialverdien for \'https\'-indikatoren i registreringsdialogen. Da vil vertsmaskinen og porten i URL-en fastsette tilsvarende initialverdier i registreringsdialogen, med standardport 443 hvis ikke oppgitt. 2. URL-suffikset (alt etter vertsmaskinen og porten) tilføyes til URL-en som brukeren registreres til. Brukeren kan endre disse verdiene selv om de sannsynligvis vil være de samme som skjemaet, vertsmaskinen og porten fra 1. Suffikset kan imidlertid ikke endres. Hvis du bruker SMP, må du oppgi skjema, vertsmaskin og port til SMP-serveren, etterfulgt av suffikset til Fiori-sluttpunktet. For eksempel: \'https://my.smp.server:8081/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html\'"</string>
+
+     <string name="restriction_title_appName">"Applikasjonsnavn"</string>
+     <string name="restriction_description_appName">"En alternativ egenskap brukt til å tilpasse Fiori-applikasjonsnavnet som vises på påloggingsbildet. Appnavnet er SAP Fiori Client som standard. Hvis feltet er tomt, er standarden brukt."</string>
+
+     <string name="restriction_title_fioriURLIsSMP">"SAP Fiori Server-URL er en SMP-server"</string>
+     <string name="restriction_description_fioriURLIsSMP">"Hvis du bruker SMP, setter du \"sant\" for å utføre registreringen"</string>
+
+     <string name="restriction_title_prefetch">"Prefetch webressurser"</string>
+     <string name="restriction_description_prefetch">"Prefetch webressurser"</string>
+
+    <string name="restriction_title_certificate">"Klientsertifikatleverandør"</string>
+    <string name="restriction_description_certificate">"Klientsertifikatleverandør"</string>
+
+    <string name="restriction_title_autoSelectSingleCert">"Velg klientsertifikatleverandør automatisk"</string>
+    <string name="restriction_description_autoSelectSingleCert">"Hvis bare ett klientsertifikat er tilgjengelig, velger du dette automatisk for gjensidig autentisering"</string>
+
+    <string name="restriction_title_passcodePolicyExpirationDays">"Koderetningslinje: Gyldighet i dager"</string>
+    <string name="restriction_description_passcodePolicyExpirationDays">"Koderetningslinje for datahvelv. Merknad: Hvis du bruker SMP, fastsettes koderetningslinjen av serveren."</string>
+
+    <string name="restriction_title_passcodePolicyHasDigits">"Koderetningslinje har sifre"</string>
+    <string name="restriction_description_passcodePolicyHasDigits">"Koderetningslinje for datahvelv. Merknad: Hvis du bruker SMP, fastsettes koderetningslinjen av serveren."</string>
+
+    <string name="restriction_title_passcodePolicyHasLowerCaseLetters">"Koderetningslinje: Må inneholde små bokstaver"</string>
+    <string name="restriction_description_passcodePolicyHasLowerCaseLetters">"Koderetningslinje for datahvelv. Merknad: Hvis du bruker SMP, fastsettes koderetningslinjen av serveren."</string>
+
+    <string name="restriction_title_passcodePolicyHasSpecialLetters">"Koderetningslinje: Må inneholde spesialtegn"</string>
+    <string name="restriction_description_passcodePolicyHasSpecialLetters">"Koderetningslinje for datahvelv. Merknad: Hvis du bruker SMP, fastsettes koderetningslinjen av serveren."</string>
+
+    <string name="restriction_title_passcodePolicyHasUpperCaseLetters">"Koderetningslinje: Må inneholde store bokstaver"</string>
+    <string name="restriction_description_passcodePolicyHasUpperCaseLetters">"Koderetningslinje for datahvelv. Merknad: Hvis du bruker SMP, fastsettes koderetningslinjen av serveren."</string>
+
+    <string name="restriction_title_passcodePolicyDefaultAllowed">"Koderetningslinje: Kodealternativ kan deaktiveres"</string>
+    <string name="restriction_description_passcodePolicyDefaultAllowed">"Koderetningslinje for datahvelv. Merknad: Hvis du bruker SMP, fastsettes koderetningslinjen av serveren."</string>
+
+    <string name="restriction_title_passcodePolicyLockTimeout">"Koderetningslinje: Lås-tidsavbrudd"</string>
+    <string name="restriction_description_passcodePolicyLockTimeout">"Koderetningslinje for datahvelv. Merknad: Hvis du bruker SMP, fastsettes koderetningslinjen av serveren."</string>
+
+    <string name="restriction_title_passcodePolicyMinLength">"Koderetningslinje: Minimumslengde"</string>
+    <string name="restriction_description_passcodePolicyMinLength">"Koderetningslinje for datahvelv. Merknad: Hvis du bruker SMP, fastsettes koderetningslinjen av serveren."</string>
+
+    <string name="restriction_title_passcodePolicyMinUniqueChars">"Koderetningslinje: Minste antall forskjellige tegn"</string>
+    <string name="restriction_description_passcodePolicyMinUniqueChars">"Koderetningslinje for datahvelv. Merknad: Hvis du bruker SMP, fastsettes koderetningslinjen av serveren."</string>
+
+    <string name="restriction_title_passcodePolicyRetryLimit">"Koderetningslinje: Maksimalt antall påloggingsforsøk"</string>
+    <string name="restriction_description_passcodePolicyRetryLimit">"Koderetningslinje for datahvelv. Merknad: Hvis du bruker SMP, fastsettes koderetningslinjen av serveren."</string>
+</resources>

@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript" charset="utf-8">
+var triggerEvent = function(actionId, valueString) {
+	var href = '#' + actionId;
+	if(valueString) {
+		href = href + '+' + valueString;
+	}
+	window.location.href = href;
+};
+</script>
+</head>
+<body>
+<script type="text/javascript" charset="utf-8">
+setTimeout(function(){triggerEvent('READY');}, 1);
+</script>
+</body>
+</html>

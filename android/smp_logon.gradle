@@ -1,0 +1,13 @@
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+// Apply values after project's build-extras.gradle
+cdvPluginPostBuildExtras.add({
+    dependencies {
+        compile(name:'AfariaProvider-3.13.0', ext:'aar')
+        compile(name:'maflogoncorecdvplugin-3.13.0', ext:'aar')
+    }
+})

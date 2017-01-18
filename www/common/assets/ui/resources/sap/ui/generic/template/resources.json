@@ -1,0 +1,325 @@
+{
+  "_version": "1.1.0",
+  "resources": [
+    {
+      "name": ".library"
+    },
+    {
+      "name": ".theming"
+    },
+    {
+      "name": "ActionUtil-dbg.js",
+      "module": "sap/ui/generic/template/ActionUtil.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/ManagedObject.js",
+        "sap/m/MessageBox.js",
+        "sap/ui/layout/form/SimpleForm.js",
+        "sap/ui/comp/smartform/Group.js",
+        "sap/ui/comp/smartform/GroupElement.js",
+        "sap/ui/comp/smartfield/SmartField.js",
+        "sap/ui/comp/smartfield/SmartLabel.js",
+        "sap/m/Dialog.js",
+        "sap/ui/generic/app/util/ModelUtil.js",
+        "sap/m/VBox.js",
+        "sap/m/Text.js"
+      ]
+    },
+    {
+      "name": "ActionUtil.js",
+      "module": "sap/ui/generic/template/ActionUtil.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/ManagedObject.js",
+        "sap/m/MessageBox.js",
+        "sap/ui/layout/form/SimpleForm.js",
+        "sap/ui/comp/smartform/Group.js",
+        "sap/ui/comp/smartform/GroupElement.js",
+        "sap/ui/comp/smartfield/SmartField.js",
+        "sap/ui/comp/smartfield/SmartLabel.js",
+        "sap/m/Dialog.js",
+        "sap/ui/generic/app/util/ModelUtil.js",
+        "sap/m/VBox.js",
+        "sap/m/Text.js"
+      ]
+    },
+    {
+      "name": "BaseViewController-dbg.js",
+      "module": "sap/ui/generic/template/BaseViewController.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/mvc/Controller.js",
+        "sap/ui/generic/template/library.js",
+        "sap/ui/core/Component.js",
+        "sap/m/MessageToast.js",
+        "sap/ui/table/Table.js",
+        "sap/m/Table.js",
+        "sap/ui/model/Filter.js",
+        "sap/ui/generic/template/ViewUtil.js",
+        "sap/ui/generic/template/ActionUtil.js",
+        "sap/ui/generic/template/MessageUtil.js",
+        "sap/ui/generic/app/util/ModelUtil.js"
+      ],
+      "condRequired": [
+        "sap/m/MessagePopover.js",
+        "sap/m/MessagePopoverItem.js"
+      ]
+    },
+    {
+      "name": "BaseViewController.js",
+      "module": "sap/ui/generic/template/BaseViewController.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/mvc/Controller.js",
+        "sap/ui/generic/template/library.js",
+        "sap/ui/core/Component.js",
+        "sap/m/MessageToast.js",
+        "sap/ui/table/Table.js",
+        "sap/m/Table.js",
+        "sap/ui/model/Filter.js",
+        "sap/ui/generic/template/ViewUtil.js",
+        "sap/ui/generic/template/ActionUtil.js",
+        "sap/ui/generic/template/MessageUtil.js",
+        "sap/ui/generic/app/util/ModelUtil.js"
+      ],
+      "condRequired": [
+        "sap/m/MessagePopover.js",
+        "sap/m/MessagePopoverItem.js"
+      ]
+    },
+    {
+      "name": "MessageUtil-dbg.js",
+      "module": "sap/ui/generic/template/MessageUtil.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/ManagedObject.js",
+        "sap/m/MessageBox.js",
+        "sap/m/Dialog.js",
+        "sap/ui/generic/app/util/ModelUtil.js"
+      ],
+      "condRequired": [
+        "sap/m/Text.js",
+        "sap/m/Button.js",
+        "sap/ui/layout/VerticalLayout.js",
+        "sap/m/MessageToast.js",
+        "sap/m/MessagePopover.js",
+        "sap/m/MessagePopoverItem.js"
+      ]
+    },
+    {
+      "name": "MessageUtil.js",
+      "module": "sap/ui/generic/template/MessageUtil.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/base/ManagedObject.js",
+        "sap/m/MessageBox.js",
+        "sap/m/Dialog.js",
+        "sap/ui/generic/app/util/ModelUtil.js"
+      ],
+      "condRequired": [
+        "sap/m/Text.js",
+        "sap/m/Button.js",
+        "sap/ui/layout/VerticalLayout.js",
+        "sap/m/MessageToast.js",
+        "sap/m/MessagePopover.js",
+        "sap/m/MessagePopoverItem.js"
+      ]
+    },
+    {
+      "name": "TemplateComponent-dbg.js",
+      "module": "sap/ui/generic/template/TemplateComponent.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/UIComponent.js",
+        "sap/ui/generic/template/library.js",
+        "sap/m/MessageBox.js",
+        "sap/ui/model/json/JSONModel.js",
+        "sap/ui/core/mvc/ViewType.js"
+      ],
+      "condRequired": [
+        "sap/ui/model/odata/AnnotationHelper.js"
+      ]
+    },
+    {
+      "name": "TemplateComponent.js",
+      "module": "sap/ui/generic/template/TemplateComponent.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/UIComponent.js",
+        "sap/ui/generic/template/library.js",
+        "sap/m/MessageBox.js",
+        "sap/ui/model/json/JSONModel.js",
+        "sap/ui/core/mvc/ViewType.js"
+      ],
+      "condRequired": [
+        "sap/ui/model/odata/AnnotationHelper.js"
+      ]
+    },
+    {
+      "name": "ViewUtil-dbg.js",
+      "module": "sap/ui/generic/template/ViewUtil.js",
+      "isDebug": true,
+      "required": [
+        "sap/ui/base/Object.js",
+        "sap/ui/table/Table.js",
+        "sap/m/Table.js",
+        "sap/ui/comp/smarttable/SmartTable.js"
+      ]
+    },
+    {
+      "name": "ViewUtil.js",
+      "module": "sap/ui/generic/template/ViewUtil.js",
+      "required": [
+        "sap/ui/base/Object.js",
+        "sap/ui/table/Table.js",
+        "sap/m/Table.js",
+        "sap/ui/comp/smarttable/SmartTable.js"
+      ]
+    },
+    {
+      "name": "library-all-dbg.js",
+      "isDebug": true,
+      "merged": true
+    },
+    {
+      "name": "library-all.js",
+      "merged": true
+    },
+    {
+      "name": "library-dbg.js",
+      "module": "sap/ui/generic/template/library.js",
+      "isDebug": true,
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/library.js",
+        "sap/ui/comp/library.js"
+      ]
+    },
+    {
+      "name": "library-preload.json",
+      "merged": true
+    },
+    {
+      "name": "library.dependencies.json"
+    },
+    {
+      "name": "library.dependencies.xml"
+    },
+    {
+      "name": "library.js",
+      "module": "sap/ui/generic/template/library.js",
+      "required": [
+        "jquery.sap.global.js",
+        "sap/ui/core/library.js",
+        "sap/ui/comp/library.js"
+      ]
+    },
+    {
+      "name": "manifest.json",
+      "module": "sap/ui/generic/template/manifest.json"
+    },
+    {
+      "name": "messagebundle.properties",
+      "module": "sap/ui/generic/template/messagebundle.properties"
+    },
+    {
+      "name": "resources.json"
+    },
+    {
+      "name": "themes/base/.theming",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/Sample.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-RTL.css",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-dbg.css",
+      "isDebug": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library-parameters.json",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library.css",
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/library.source.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/base/shared.less",
+      "designtime": true,
+      "theme": "base"
+    },
+    {
+      "name": "themes/sap_bluecrystal/.theming",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/Sample.less",
+      "designtime": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library-RTL-dbg.css",
+      "isDebug": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library-RTL.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library-dbg.css",
+      "isDebug": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library-parameters.json",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library.css",
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library.less",
+      "designtime": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/library.source.less",
+      "designtime": true,
+      "theme": "sap_bluecrystal"
+    },
+    {
+      "name": "themes/sap_bluecrystal/shared.less",
+      "designtime": true,
+      "theme": "sap_bluecrystal"
+    }
+  ]
+}

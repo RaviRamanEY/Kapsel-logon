@@ -1,0 +1,73 @@
+<core:FragmentDefinition
+        xmlns="sap.m"
+        xmlns:core="sap.ui.core"
+        xmlns:build="sap.build"
+        xmlns:ovp="sap.ovp.ui"
+        xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1">
+
+    
+    <Table id="ovpTable" items="{parts:[{path:'entitySet>'}, {path:'ovpCardProperties>/annotationPath'}], formatter: 'sap.ovp.cards.AnnotationHelper.formatItems'}"
+            build:metadata="#pattern:GenericCard>Table;set:ovpCardProperties>/annotationPath:com.sap.vocabularies.UI.v1.LineItem">
+        <customData>
+            <ovp:CustomData key="aria-label" value="{ovplibResourceBundle>tableCard}" writeToDom="true" />
+            <ovp:CustomData key="role" value="heading" writeToDom="true" />
+        </customData>
+        <template:with path='ovpCardProperties>/annotationPath' helper="sap.ovp.cards.AnnotationHelper.resolveEntityTypePath" var='lineItem'>
+
+                <columns>
+                    <Column>
+                        <Text
+                            text="{path: 'lineItem>', formatter: 'sap.ovp.cards.AnnotationHelper.getFirstDataFieldName'}"
+                            build:metadata="#pattern:GenericCard>Table;prop::FirstColumnTitle:{lineItem>/0/Label};"/>
+                    </Column>
+                    <Column>
+                        <Text
+                            text="{path: 'lineItem>', formatter: 'sap.ovp.cards.AnnotationHelper.getSecondDataFieldName'}"
+                            build:metadata="#pattern:GenericCard>Table;prop::SecondColumnTitle:{lineItem>/1/Label};"/>
+                    </Column>
+                    <Column>
+                        <template:if test="{= ${path: 'lineItem>', formatter: 'sap.ovp.cards.AnnotationHelper.getDataPointsCount'} > 0}" >
+                            <template:then>
+                                <Text
+                                    text="{path: 'lineItem>', formatter: 'sap.ovp.cards.AnnotationHelper.getFirstDataPointName'}"
+                                    build:metadata="#pattern:GenericCard>Table;prop::ThirdColumnTitle:{lineItem>/2/Target@@Title};"/>
+                            </template:then>
+                            <template:else>
+                                <Text
+                                    text="{path: 'lineItem>', formatter: 'sap.ovp.cards.AnnotationHelper.getThirdDataFieldName'}" />
+                            </template:else>
+                        </template:if>
+                    </Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem
+                            type="Active"
+                            press="onColumnListItemPress">
+                        <cells>
+                            <Text
+                                text="{path: 'lineItem>', formatter: 'sap.ovp.cards.AnnotationHelper.formatFirstDataFieldValue'}"
+                                build:metadata="#pattern:GenericCard>Table;prop::FirstAttribute:{lineItem>/0/Value}"/>
+                            <Text
+                                text="{path: 'lineItem>', formatter: 'sap.ovp.cards.AnnotationHelper.formatSecondDataFieldValue'}"
+                                build:metadata="#pattern:GenericCard>Table;prop::SecondAttribute:{lineItem>/1/Value}"/>
+                            <template:if test="{= ${path: 'lineItem>', formatter: 'sap.ovp.cards.AnnotationHelper.getDataPointsCount'} > 0}" >
+                                <template:then>
+                                    <ObjectNumber
+                                            number="{path: 'lineItem>', formatter: 'sap.ovp.cards.AnnotationHelper.formatFirstDataPointValue'}"
+                                            state="{path: 'lineItem>', formatter: 'sap.ovp.cards.AnnotationHelper.formatFirstDataPointState'}"
+                                            build:metadata="#pattern:GenericCard>Table;prop::Number:{lineItem>/2/Target@@Value};prop::NumberToleranceRangeLowValue:{lineItem>2/Target@@CriticalityCalculation/ToleranceRangeLowValue};prop::NumberDeviationRangeLowValue:{lineItem>2/Target@@CriticalityCalculation/DeviationRangeLowValue}"/>
+                                </template:then>
+                                <template:else>
+                                    <Text text="{path: 'lineItem>', formatter: 'sap.ovp.cards.AnnotationHelper.formatThirdDataFieldValue'}"/>
+                                </template:else>
+                            </template:if>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+
+        </template:with>
+    </Table>
+
+
+</core:FragmentDefinition>
